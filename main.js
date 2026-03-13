@@ -6,7 +6,13 @@ var jogador = 'o';
 var vencedor =' ';
 var fimJogo = false;
 var tab = [3];
-//(a)
+for(i = 0; i < 3; i++){
+    tab[i] = [];
+    for(j = 0; j < 3; j++){
+        tab[i][j] = ' ';
+    }
+}
+
 while((jogadas<0)&&(fimJogo==false)){
     //(b)
     lin = parseInt(prompt(`${jogador} em [linha]: `));
